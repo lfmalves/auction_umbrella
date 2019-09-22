@@ -17,8 +17,7 @@ defmodule AuctionUmbrella.MixProject do
   defp deps do
     [
       {:ecto_sql, "~> 3.2.0"},
-      {:postgrex, "~> 0.15.1"},
-      {:uuid, "~> 1.1.8"}
+      {:postgrex, "~> 0.15.1"}
     ]
   end
 end
