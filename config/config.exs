@@ -39,3 +39,10 @@ config :phoenix, :json_library, Jason
 import_config "#{Mix.env()}.exs"
 
 config :auction, ecto_repos: [Auction.Repo]
+
+config :auction, Auction.Repo,
+	database: "auction",
+	username: "postgres",
+	password: "postgres",
+	hostname: "localhost",
+	port: "5432"
