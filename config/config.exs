@@ -41,6 +41,7 @@ import_config "#{Mix.env()}.exs"
 config :auction, ecto_repos: [Auction.Repo]
 
 config :auction, Auction.Repo,
+	adapter: Ecto.Adapters.Postgres,
 	database: "auction",
 	username: "postgres",
 	password: "postgres",
